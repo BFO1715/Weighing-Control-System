@@ -21,6 +21,10 @@ body {
 
 /*----- Weighing process images */
 
+.weighingprocess {
+    font-size: 0;
+}
+
 .truckin {
     transform: scale(0.25);
 }
@@ -31,4 +35,18 @@ body {
 
 .truckout {
     transform: scale(0.25);
+}
+
+/*----- Calculations */
+
+#netweight{
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#eternaltotal{
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
