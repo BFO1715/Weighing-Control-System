@@ -4,10 +4,31 @@ body {
     color: black;
     text-align: center;
 }
-.jwslogo {
-    display: inline-block;
-    padding-right: 40%;
+
+/*----- Header Logo & Description */
+
+.heading {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
 }
-.decsription {
-    padding-left: 40%;
+
+.logodescription {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+/*----- Weighing process images */
+
+.truckin {
+    transform: scale(0.25);
+}
+
+.scale {
+    transform: scale(0.25);
+}
+
+.truckout {
+    transform: scale(0.25);
 }

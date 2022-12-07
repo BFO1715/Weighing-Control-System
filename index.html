@@ -8,22 +8,31 @@
     <title>Weighing Control System</title>
 </head>
 <body>
-    <h1>
+    <div class = "heading">
+    <h1 class = "logodescription">
         <img class="jwslogo" src="assets/images/jwslogo.png" alt="jwslogo"> 
     </h1>
-    <h4 class = "description">
+    <h4 class = "logodescription">
         <p>Calculate Net Weight online now!</p>
         <p>Monitor your Eternal total</p>
         <p>Keep track of your goods.</p>
     </h4>
-    <div>
-        <img class="truckin" src="assets/images/truckin.png" alt="truckin"> 
     </div>
+        <span><img class="truckin" src="assets/images/truckin.png" alt="truckin"></span>
+        <span><img class="scale" src="assets/images/scale.png" alt="scale"></span>
+        <span><img class="truckout" src="assets/images/truckout.png" alt="truckout"></span>
     <div>
-        <img class="scale" src="assets/images/scale.png" alt="scale"> 
+        <button data-type="submit" class="submitbutton">Submit</button>
     </div>
+    <br>
     <div>
-        <img class="truckout" src="assets/images/truckout.png" alt="truckout"> 
+        <span><input id="inweight" type=""number>In Weight</span>
+        <span id="netweight" type=""number>Net Weight</span>
+        <span><input id="outweight" type=""number>Out Weight</span>
+    </div>
+    <br>
+    <div>
+        <span id="eternalweight" type=""number>Eternal Total</span>
     </div>
 
 
