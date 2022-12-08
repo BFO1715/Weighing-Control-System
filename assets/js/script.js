@@ -9,32 +9,33 @@ function calc() {
     if (!input2) { input2 = 0; }
     let total = document.getElementById("netweight");
     total.value = input1 - input2;
-
-    target = parseInt(document.getElementById("targetweight"));
-    if (target === total) {
-        alert(`Target Weight met`);
-    } else {
-        alert(`Target Weight not met - note vehicle registration`);
-    }  
 }
 
 /**
- * Add event listener to the submit button
+ * Event listener to the submit button
  */
 
- let counterDisplayElem = document.querySelector('.counter-display');
- let counterPlusElem = document.querySelector('.counter-plus');
+ let counterDisplay = document.querySelector('.counterdisplay');
+ let counterPlus = document.querySelector('.counterplus');
  
  let count = 0;
  
  updateDisplay();
  
- counterPlusElem.addEventListener("click",()=>{
+ counterPlus.addEventListener("click",()=>{
      count++;
      updateDisplay();
  }) ;
  
  function updateDisplay(){
-     counterDisplayElem.innerHTML = count;
+     counterDisplay.innerHTML = count;
  };
 
+/**
+ * Alert for target weight met or not
+ */
+
+ function notice() {
+     alert(`Target Weight met`);
+
+ }  
