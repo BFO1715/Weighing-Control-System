@@ -25,14 +25,17 @@
         <button data-type="submit" class="submitbutton">Submit</button>
     </div>
     <br>
-    <div>
-        <span><input id="inweight" type=""number> In Weight</span>
-        <span><input id="outweight" type=""number> Out Weight</span>
+    <div class="unladentruck">
+        <label for="input1">In  Weight</label>
+        <input type="text" name="totalval" class="calculation" id="totalval" onchange="updateDue()">
     </div>
-    <br>
-    <div>
-        <span><output id="netweight" name="net">"0"</output> Net Weight</span>
-        <span><output id="eternaltotal" name="eternal">"0"</output> Eternal total</span>
+    <div class="loadedtruck">
+        <label for="input2">Out Weight</label>
+        <input type="text" name="inideposit" class="calculation" id="inideposit" onchange="updateDue()">
+    </div>
+    <div class="load">
+        <label for="output1">Net Weight</label>
+        <input type="text" name="remainingval" class="calculation" id="remainingval">
     </div>
 
 
