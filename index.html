@@ -17,27 +17,31 @@
         <p>Monitor your Eternal total</p>
         <p>Keep track of your goods.</p>
     </h4>
-    </div class = "weighingprocess">
+    </div>
+    <div class = "weighingprocess">
         <span><img class="truckin" src="assets/images/truckin.png" alt="truckin"></span>
         <span><img class="scale" src="assets/images/scale.png" alt="scale"></span>
         <span><img class="truckout" src="assets/images/truckout.png" alt="truckout"></span>
-    <div>
-        <button data-type="submit" class="submitbutton">Submit</button>
     </div>
     <br>
     <div class="unladentruck">
         <label for="input1">In  Weight</label>
-        <input type="text" name="totalval" class="calculation" id="totalval" onchange="updateDue()">
+        <input type="text" name="inweight" class="calculation" id="inweight" onchange="calc()">
     </div>
+    <br>
     <div class="loadedtruck">
         <label for="input2">Out Weight</label>
-        <input type="text" name="inideposit" class="calculation" id="inideposit" onchange="updateDue()">
+        <input type="text" name="outweight" class="calculation" id="outweight" onchange="calc()">
     </div>
+    <br>
     <div class="load">
         <label for="output1">Net Weight</label>
-        <input type="text" name="remainingval" class="calculation" id="remainingval">
+        <input type="text" name="netweight" class="calculation" id="netweight">
     </div>
-
+    <br>
+    <div>
+        <button data-type="submit" class="submitbutton">Submit</button>
+    </div>
 
 
 

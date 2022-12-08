@@ -22,7 +22,7 @@ body {
 /*----- Weighing process images */
 
 .weighingprocess {
-    font-size: 0;
+    display: inline-block;
 }
 
 .truckin {

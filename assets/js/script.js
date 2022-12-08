@@ -1,9 +1,18 @@
-function updateDue() {
-    var total = parseInt(document.getElementById("totalval").value);
-    var val2 = parseInt(document.getElementById("inideposit").value);
+/**
+ * Subtraction to calculate net weight from inweight and outweight
+ */
+
+function calc() {
+    var input1 = parseInt(document.getElementById("inweight").value);
+    var input2 = parseInt(document.getElementById("outweight").value);
     // to make sure that they are numbers
-    if (!total) { total = 0; }
-    if (!val2) { val2 = 0; }
-    var ansD = document.getElementById("remainingval");
-    ansD.value = total - val2;
+    if (!input1) { input1 = 0; }
+    if (!input2) { input2 = 0; }
+    var total = document.getElementById("netweight");
+    total.value = input1 - input2;
 }
+
+/**
+ * Add event listener to the submit button
+ */
+
