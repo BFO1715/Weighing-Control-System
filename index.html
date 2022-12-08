@@ -13,13 +13,18 @@
         <img class="jwslogo" src="assets/images/jwslogo.png" alt="jwslogo"> 
     </h1>
     <h4 class = "logodescription">
-        <p>Calculate Net Weight online now!</p>
-        <p>Monitor your Eternal total</p>
-        <p>Keep track of your goods.</p>
+        <p>Calculate net weight online now!</p>
+        <p>Monitor target weight accuracy</p>
+        <p>Keep track of number of loads</p>
     </h4>
     </div>
     <div class = "imagearea">
         <span><img class="weighingprocess" src="assets/images/weighingprocess.png" alt="truckin"></span>
+    </div>
+    <br>
+    <div class="targetload">
+        <label for="output2">Target Weight</label>
+        <input type="text" name="targetweight" id="targetweight">
     </div>
     <br>
     <div class="unladentruck">
@@ -37,14 +42,9 @@
         <input type="text" name="netweight" class="calculation" id="netweight">
     </div>
     <br>
-    <div class="targetload">
-        <label for="output2">Target Weight</label>
-        <input type="text" name="targetweight" class="calculation" id="targetweight">
-    </div>
-    <br>
     <div>
         <h1 class="counterdisplay">(..)</h1>
-        <button class="counterplus" onclick="notice()">Submit Readings</button>
+        <button class="counterplus" onclick="notice()">Submit Loads</button>
     </div>
   
 

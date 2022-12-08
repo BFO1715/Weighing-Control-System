@@ -15,28 +15,38 @@ function calc() {
  * Event listener to the submit button
  */
 
- let counterDisplay = document.querySelector('.counterdisplay');
- let counterPlus = document.querySelector('.counterplus');
+let counterDisplay = document.querySelector('.counterdisplay');
+let counterPlus = document.querySelector('.counterplus');
  
- let count = 0;
+let count = 0;
  
- updateDisplay();
+updateDisplay();
  
- counterPlus.addEventListener("click",()=>{
-     count++;
-     updateDisplay();
- }) ;
+counterPlus.addEventListener("click",()=>{
+    count++;
+    updateDisplay();
+}) ;
  
- function updateDisplay(){
-     counterDisplay.innerHTML = count;
- };
+function updateDisplay(){
+    counterDisplay.innerHTML = count;
+};
 
 /**
- * Alert for target weight met or not
+ * Alert for target weight within 10% tolerance
  */
 
- function notice() {
-     alert(`Target Weight met`);
- }  
+let load = document.getElementById("netweight");
+let target = document.getElementById("targetweight");
+
+counterPlus.addEventListener("click", checkweight)
+
+function checkweight() {
+    if (load.value === target.value || load.value < (target.value*1.1) && load.value > (target.value*0.9)) {
+        alert("Weight within 10% tolerance - vehicle can pass")
+    } else {
+        alert("Weight OUTWITH 10% tolerance - STOP vehicle!")
+    }
+}
+
 
 
