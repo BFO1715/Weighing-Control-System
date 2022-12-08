@@ -1,7 +1,7 @@
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: blue;
     text-align: center;
 }
 
@@ -19,34 +19,13 @@ body {
     vertical-align: middle;
 }
 
-/*----- Weighing process images */
+/*----- Weighing process image */
 
 .weighingprocess {
-    display: inline-block;
-}
-
-.truckin {
-    transform: scale(0.25);
-}
-
-.scale {
-    transform: scale(0.25);
-}
-
-.truckout {
-    transform: scale(0.25);
+    
 }
 
 /*----- Calculations */
 
-#netweight{
-    border: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
-#eternaltotal{
-    border: 1px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+

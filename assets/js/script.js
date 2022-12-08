@@ -37,5 +37,6 @@ function calc() {
 
  function notice() {
      alert(`Target Weight met`);
-
  }  
+
+
