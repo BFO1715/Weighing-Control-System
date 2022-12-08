@@ -29,7 +29,7 @@ counterPlus.addEventListener("click",()=>{
  
 function updateDisplay(){
     counterDisplay.innerHTML = count;
-};
+}
 
 /**
  * Alert for target weight within 10% tolerance
@@ -38,13 +38,13 @@ function updateDisplay(){
 let load = document.getElementById("netweight");
 let target = document.getElementById("targetweight");
 
-counterPlus.addEventListener("click", checkweight)
+counterPlus.addEventListener("click", checkweight);
 
 function checkweight() {
     if (load.value === target.value || load.value < (target.value*1.1) && load.value > (target.value*0.9)) {
-        alert("Weight within 10% tolerance - vehicle can pass")
+        alert("Weight within 10% tolerance - vehicle can pass");
     } else {
-        alert("Weight OUTWITH 10% tolerance - STOP vehicle!")
+        alert("Weight OUTWITH 10% tolerance - STOP vehicle!");
     }
 }
 
