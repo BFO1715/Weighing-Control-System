@@ -13,9 +13,15 @@
         <img class="jwslogo" src="assets/images/jwslogo.png" alt="jwslogo"> 
     </h1>
     <h4 class = "logodescription">
-        <p>Calculate net weight online now!</p>
-        <p>Monitor target weight accuracy</p>
-        <p>Keep track of number of loads</p>
+        <b>Calculate net weight online now!</b>
+        <br>
+        <br>
+        <b>Monitor target weight accuracy</b>
+        <br>
+        <br>
+        <b>Keep track of number of loads</b>
+        <br>
+        <br>
     </h4>
     </div>
     <div class = "imagearea">
@@ -23,22 +29,22 @@
     </div>
     <br>
     <div class="targetload">
-        <label for="output2">Target Weight</label>
+        <label for="targetweight">Target Weight</label>
         <input type="text" name="targetweight" id="targetweight">
     </div>
     <br>
     <div class="unladentruck">
-        <label for="input1">In Weight</label>
+        <label for="inweight">In Weight</label>
         <input type="text" name="inweight" class="calculation" id="inweight" onchange="calc()">
     </div>
     <br>
     <div class="loadedtruck">
-        <label for="input2">Out Weight</label>
+        <label for="outweight">Out Weight</label>
         <input type="text" name="outweight" class="calculation" id="outweight" onchange="calc()">
     </div>
     <br>
     <div class="load">
-        <label for="output1">Net Weight</label>
+        <label for="netweight">Net Weight</label>
         <input type="text" name="netweight" class="calculation" id="netweight">
     </div>
     <br>
@@ -46,14 +52,6 @@
         <h1 class="counterdisplay">(..)</h1>
         <button class="counterplus" onclick="notice()">Submit Loads</button>
     </div>
-  
-
-
-
-
-
-
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>
