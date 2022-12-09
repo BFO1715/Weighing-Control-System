@@ -1,108 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Weighing Control System
 
-Welcome BFO1715,
+Weighing Control System is a site that allows a user to enter the loaded weight of a vehicle coming into site and the unladen wight of the vehicle leaving site. It then tells the user the net weight of product (loaded weight less unladen weight) that have been delivered to site. The system will alert the user if the weight of the product is with the allowable tolerance of the target weight. It will also keep a tally of number of loads that have entered the site. This will allow the user to monitor the output of goods from their site and ensure security of goods leaving site based on expected weights. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img src="assets/images/Indicator.png" alt="Indicator" width="200" height="175"> <img src="assets/images/Description.png" alt="Description" width="300" height = "175">
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<strong><u>STRATEGY</u></strong>
 
-## Gitpod Reminders
+Focus - What’s worth doing?<br>
+Allow the user to calculate net weight between loaded and unladen trucks coming in and out of site, monitor accuracy and tally loads. <br><br>
+Definition - What are we creating?<br>
+An easy to use and accessible JavaScript tool that can be used in a browser without any additional software required. <br><br>
+Value - What value does it provide?<br>
+It provides the user with an error free way of counter checking whether loads entering sites are within tolerance of goods going out of site by taking a reading from the weighing indicator as the loaded truck goes over the incoming weighbridge and taking another reading as the unladen goes over the outgoing weighbridge. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<strong><u>SCOPE</u></strong>
 
-`python3 -m http.server`
+What features will be available?<br>
+There will be a logo, weighing related images and brief description of what the tool does. There will be input numerical boxes where the user will enter the target weight, loaded truck weight and unladen truck weight. There will also be an output numerical box where the net weight will be calculated. A submit button will alert the user whether the net weight is within the allowable tolerance of the target weight. The submit button will also tally the number of loads coming into site. 
 
-A blue button should appear to click: _Make Public_,
+<strong><u>STRUCTURE</u></strong>
 
-Another blue button should appear to click: _Open Browser_.
+How is the user interaction designed?<br>
+At the top of the page will be a JWS logo with a brief description of what it does. Below that there will be two images of trucks left and right to represent the unladen and loaded trucks and an image of a weighing scale in the middle to represent weighing. Underneath the images will be the input and output numerical boxes. Underneath the numerical boxes will be the tally for number of loads and the submit button.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<strong><u>SKELETON</u></strong>
 
-A blue button should appear to click: _Make Public_,
+How will the interface be laid out?
 
-Another blue button should appear to click: _Open Browser_.
+<img src="assets/images/Wireframe.png" alt="Wireframe" width="500" height="300"><br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<strong><u>SURFACE</u></strong>
 
-To log into the Heroku toolbelt CLI:
+What will the visual design look like?<br>
+Minimalist theme, white background with the images adding some color. Content will be kept narrowly but evenly spaced to give a clean look.  Will use ariel font which will be black.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<strong><u>FUTURE RELEASES</u></strong>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+What features would you like to have in the future?<br>
+Adding registration plates for the trucks and keeping a database of all the corresponding weight readings including an eternal total for the net weight.
 
-------
+<strong><u>TECHNOLOGY</u></strong>
 
-## Release History
+What technology was used?<br>
+Gitpod, GitHub, HTML, CSS, Balsamiq Wireframe.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<strong><u>TESTING</u></strong>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+How was the site tested and are there any bugs that have not been addressed?<br>
+HTML – Changed p to b on HTML rows 16, 19, 22 as p cannot be used under h4. No other errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F).<br>
+CSS - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/).<br>
+JavaScript – Added missing semi colons to JS, 1 warning due to unused variable – left in place as required for functioning calculation. No other errors were found when passing through the official [Jshint validator](https://jshint.com/).<br>
+Google Chrome Dev Tools was used to test responsiveness on mobile and tablet devices – all fine.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+<strong><u>DEPLOYMENT</u></strong>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+How was the project deployed?<br>
+The site was deployed to GitHub pages. The steps to deploy are as follows:<br>
+In the GitHub repository, navigate to the Settings tab.<br>
+Scroll down to the pages option on the left menu and select.<br>
+Select the main branch from the build and deployment section.<br>
+Once the main branch has been selected and the page is refreshed a message is displayed to indicate the successful deployment.<br>
+The live link can be found here - https://code-institute-org.github.io/love-maths/
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<strong><u>CREDITS</u></strong>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Code Institute <br>
+Stack Overflow<br>
+John White & Son<br>
+iStock Photos<br>
+Clipart Library
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
