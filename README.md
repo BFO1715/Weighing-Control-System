@@ -60,7 +60,7 @@ In the GitHub repository, navigate to the Settings tab.<br>
 Scroll down to the pages option on the left menu and select.<br>
 Select the main branch from the build and deployment section.<br>
 Once the main branch has been selected and the page is refreshed a message is displayed to indicate the successful deployment.<br>
-The live link can be found here - https://code-institute-org.github.io/love-maths/
+The live link can be found here - https://bfo1715.github.io/Weighing-Control-System/
 
 <strong><u>CREDITS</u></strong>
 
