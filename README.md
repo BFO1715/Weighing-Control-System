@@ -42,25 +42,34 @@ Adding registration plates for the trucks and keeping a database of all the corr
 <strong><u>TECHNOLOGY</u></strong>
 
 What technology was used?<br>
-Gitpod, GitHub, HTML, CSS, Balsamiq Wireframe.
+Gitpod<br>
+GitHub<br>
+Balsamiq Wireframe<br>
+HTML<br>
+CSS<br>
+JavaScript
 
 <strong><u>TESTING</u></strong>
 
 How was the site tested and are there any bugs that have not been addressed?<br>
-HTML – Changed p to b on HTML rows 16, 19, 22 as p cannot be used under h4. No other errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F).<br>
-CSS - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/).<br>
+HTML – Changed p to b on HTML rows 16, 19, 22 as p cannot be used under h4. No other errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F).<br><br>
+CSS - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/).<br><br>
 JavaScript – Added missing semi colons to JS, 1 warning due to unused variable – left in place as required for functioning calculation. No other errors were found when passing through the official [Jshint validator](https://jshint.com/).<br>
-Google Chrome Dev Tools was used to test responsiveness on mobile and tablet devices – all fine.
+<img src="assets/images/JSwarning.png" alt="Warning" width="250" height="100"><br><br>
+Google Chrome Dev Tools was used to test responsiveness on mobile and tablet devices – all fine with iPhone and iPad.<br><br>
+Tested page with string values in fields and correct alert popped up "Please enter a valid number". Tested page with net weight withing the 10% tolerance and correct alert popped up "Weight within 10% tolerance - vehicle can pass". Tested the net weight outwith 10% tolerance and correct alert popped up "Weight OUTWITH 10% tolerance - STOP vehicle!".
 
 <strong><u>DEPLOYMENT</u></strong>
 
 How was the project deployed?<br>
 The site was deployed to GitHub pages. The steps to deploy are as follows:<br>
-In the GitHub repository, navigate to the Settings tab.<br>
-Scroll down to the pages option on the left menu and select.<br>
-Select the main branch from the build and deployment section.<br>
-Once the main branch has been selected and the page is refreshed a message is displayed to indicate the successful deployment.<br>
-The live link can be found here - https://bfo1715.github.io/Weighing-Control-System/
+<ul>
+<li>In the GitHub repository, navigate to the Settings tab.</li>
+<li>Scroll down to the pages option on the left menu and select.</li>
+<li>Select the main branch from the build and deployment section.</li>
+<li>Once the main branch has been selected and the page is refreshed a message is displayed to indicate the successful deployment.</li>
+<li>The live link can be found here - https://bfo1715.github.io/Weighing-Control-System/</li>
+</ul>
 
 <strong><u>CREDITS</u></strong>
 

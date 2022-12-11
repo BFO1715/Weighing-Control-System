@@ -3,12 +3,12 @@
  */
 
 function calc() {
-    let input1 = parseInt(document.getElementById("inweight").value);
-    let input2 = parseInt(document.getElementById("outweight").value);
-    if (!input1) { input1 = 0; }
-    if (!input2) { input2 = 0; }
-    let total = document.getElementById("netweight");
-    total.value = input1 - input2;
+    let inweight = parseInt(document.getElementById("inweight").value);
+    let outweight = parseInt(document.getElementById("outweight").value);
+    if (!inweight) { inweight = 0; }
+    if (!outweight) { outweight = 0; }
+    let load = document.getElementById("netweight");
+    load.value = inweight - outweight;
 }
 
 /**
@@ -32,21 +32,24 @@ function updateDisplay(){
 }
 
 /**
- * Alert for target weight within 10% tolerance
+ * Alert for target weight within 10% tolerance 
+ * Alert if values are not numbers
  */
-
-let load = document.getElementById("netweight");
-let target = document.getElementById("targetweight");
-
 counterPlus.addEventListener("click", checkweight);
 
 function checkweight() {
-    if (load.value === target.value || load.value < (target.value*1.1) && load.value > (target.value*0.9)) {
+    let load = document.getElementById("netweight");
+    let target = document.getElementById("targetweight");
+    let inweight = parseInt(document.getElementById("inweight").value);
+    let outweight = parseInt(document.getElementById("outweight").value);
+
+    if (isNaN(target.value) || isNaN(inweight) || isNaN(outweight)) {
+        alert ("Please enter a valid number");
+    } else if (load.value === target.value || load.value < (target.value*1.1) && load.value > (target.value*0.9)) {
         alert("Weight within 10% tolerance - vehicle can pass");
     } else {
         alert("Weight OUTWITH 10% tolerance - STOP vehicle!");
     }
 }
-
 
 
